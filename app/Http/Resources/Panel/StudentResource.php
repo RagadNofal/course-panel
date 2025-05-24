@@ -14,13 +14,15 @@ class StudentResource extends JsonResource
      * @return array<string, mixed>
      */
     public function toArray(Request $request): array
-    {
-        return [
-            'name' => $this['name'],
-            'email' => $this['email'],
-            'created_at' => Carbon::parse($this['created_at'])->format('Y-m-d'),
-            'active' => view('panel.students.partials.active_status' , ['instance' => $this])->render(),
-            'options' => view('panel.students.partials.options' , ['instance' => $this])->render()
-        ];
-    }
+{
+    return [
+        'name' => $this['name'],
+        'email' => $this['email'],
+        'phone' => $this['phone'], 
+        'created_at' => Carbon::parse($this['created_at'])->format('Y-m-d'),
+        'active' => view('panel.students.partials.active_status', ['instance' => $this])->render(),
+        'options' => view('panel.students.partials.options', ['instance' => $this])->render(),
+    ];
+}
+
 }

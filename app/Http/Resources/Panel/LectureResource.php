@@ -13,7 +13,7 @@ class LectureResource extends JsonResource
          return [
         'title' => $this->title ?? '',
         'course' => $this->course->title ?? '-',
-        'video_url' => $this->video_url ?? '',
+        'video_url' => $this->video_url ? url($this->video_url) : '',
         'duration' => ($this->duration !== null ? $this->duration . ' min' : ''),
         'active' => view('panel.lectures.partials.active_status', ['instance' => $this])->render(),
         'created_at' => $this->created_at ? $this->created_at->format('Y-m-d') : '',

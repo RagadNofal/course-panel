@@ -182,6 +182,6 @@ return [
     'course' => 'Course',
     'progress' => 'Progress',
     'enrolled_at' => 'Enrolled Date',
-    'enrollments'=>'Enrollments'
-   
+    'enrollments'=>'Enrollments',
+   'watch_video' => 'Watch Video',
 ];

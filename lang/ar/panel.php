@@ -185,5 +185,7 @@ return [
     'course' => 'الدورة',
     'progress' => 'نسبة التقدم',
     'enrolled_at' => 'تاريخ التسجيل',
-    'enrollments'=>'التسجيل'
+    'enrollments'=>'التسجيل',
+    'watch_video' => 'مشاهدة الفيديو',
+
 ];

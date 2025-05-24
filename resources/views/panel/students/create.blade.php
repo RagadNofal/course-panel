@@ -34,6 +34,13 @@
                                        value="{{ old('email', $item->email ?? '') }}"
                                        required />
                             </div>
+                            {{-- Phone --}}
+                            <div class="form-group">
+                                <label>{{ __('panel.phone') }} <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="phone"
+                                    value="{{ old('phone', $item->phone ?? '') }}"
+                                    required />
+                            </div>
 
                             {{-- Password --}}
                             <div class="form-group">

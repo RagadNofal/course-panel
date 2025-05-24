@@ -73,6 +73,11 @@
                 title: '@lang('panel.video_url')',
                 selector: false,
                 textAlign: 'center',
+                template: function (data) {
+                return data.video_url
+        ? `<a href="${data.video_url}" target="_blank" class="text-primary text-hover-underline">{{ __('panel.watch_video') }}</a>`
+                : '-';
+    }
             },
             {
                 field: 'duration',

@@ -75,6 +75,12 @@
                 textAlign: 'center',
             },
             {
+                field: 'phone',
+                title: '@lang("panel.phone")', // Make sure you have this translation
+                selector: false,
+                textAlign: 'center',
+            },
+            {
                 field: 'created_at',
                 title: '@lang('panel.created_at')',
                 selector: false,
